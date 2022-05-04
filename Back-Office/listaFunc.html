@@ -65,7 +65,7 @@
                </a>
                <div id="collapseFunc" class="collapse" aria-labelledby="headingFunc" data-parent="#accordionSidebar">
                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="listaFunc.html">Lista</a>
+                        <a class="collapse-item" href="listaFunc.html" onclick="loadData()">Lista</a>
                         <a class="collapse-item" href="registoFunc.html">Registar</a>
                    </div>
                </div>
@@ -248,6 +248,17 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Lista de Funcionários</h1>
+                    
+                    <table border="0">
+                        <thead>
+                            <tr>
+                                <th> Nome </th>
+                                <th> Função </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbbody">
+                        </tbody>
+                    </table>
 
                 </div>
                 <!-- /.container-fluid -->
