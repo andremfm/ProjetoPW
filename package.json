@@ -1,0 +1,19 @@
+{
+  "name": "projetopw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andremfm/ProjetoPW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andremfm/ProjetoPW/issues"
+  },
+  "homepage": "https://github.com/andremfm/ProjetoPW#readme"
+}
