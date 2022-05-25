@@ -265,27 +265,41 @@
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Registar Material</h1>
 
-                    <form>
-                        <div class="form-check form-check-inline">
-                            <div class="row">
-                                <div class="col-md-auto">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="tipo"/>
-                                    <label class="form-check-label" for="tipo"> Camera de Filmar </label>
-                                </div>
-                                <div class="col-md-auto">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="tipo"/>
-                                    <label class="form-check-label" for="tipo"> Camera Fotografica </label>
-                                </div>
+                    <form id="materiais">
+                        <div class="form-group">
+                            <select class="form-control" class="form-control form-control-user" id="Tipo">
+                                <option selected>Material</option>
+                                <option value="Câmara de Filmar(">Câmara de Filmar</option>
+                                <option value="Câmara de Filmar(Slow-Motion)">Câmara de Filmar(Slow-Motion)</option>
+                                <option value="Câmara Fotográfica">Câmara Fotográfica</option>
+                                <option value="Objetiva(Zoom)">Objetiva(Zoom)</option>
+                                <option value="Objetiva(Grande Amplitude)">Objetiva(Grande Amplitude)</option>
+                                <option value="Objetiva(Retrato)">Objetiva(Retrato)</option>
+                                <option value="Câmara de Filmar(Retrato)">Câmara de Filmar(Retrato)</option>
+                                <option value="Microfone">Microfone</option>  
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <input type="text" class="form-control form-control-user" id="Marca"
+                                    placeholder="Marca">
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <input type="text" class="form-control form-control-user" id="Name" placeholder="Nome">
-                                </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-user" id="Modelo"
+                                    placeholder="Modelo">
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control form-control-user" id="DataAqui"
+                                placeholder="Data de Aquisição">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control form-control-user" id="Valor"
+                                placeholder="Valor Aluguer(€)">
                         </div>
                         <div class="form-group row">
                         </div>
-                        <a href="index.html" class="btn btn-primary btn-user btn-block" onclick="">
+                        <a href="index.html" class="btn btn-primary btn-user btn-block" onclick="guardarMat()">
                             Registar
                         </a>
                         <hr>

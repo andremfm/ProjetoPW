@@ -22,7 +22,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="loadDataMat()">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -261,13 +261,20 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Material</h1>
-
-                </div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Marca</th>
+                            <th scope="col">Modelo</th>
+                            <th scope="col">Data de Aquisição</th>
+                            <th scope="col">Valor do Aluguer</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody id="tbbodymateriais"></tbody>
+                      </table>
                 <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
 
