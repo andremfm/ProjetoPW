@@ -22,7 +22,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="loadDataOperacoes()">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -56,6 +56,37 @@
                Menu
            </div>
 
+           <!-- Nav Item - Pedidos Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePedidos"
+                aria-expanded="true" aria-controls="collapsePedidos">
+                <i class="fas fa-fw fa-envelope"></i>
+                <span>Pedidos</span>
+            </a>
+            <div id="collapsePedidos" class="collapse" aria-labelledby="headingPedidos"
+                data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="pedidos.html">Consultar</a>
+                </div>
+            </div>
+            </li>
+
+           <!-- Nav Item - Operações Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOperacoes"
+                aria-expanded="true" aria-controls="collapseOperacoes">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Operações</span>
+            </a>
+            <div id="collapseOperacoes" class="collapse" aria-labelledby="headingOperacoes"
+                data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="operacoes.html">Consultar</a>
+                    <a class="collapse-item" href="registarOp.html">Registar</a>
+                </div>
+            </div>
+            </li>
+
            <!-- Nav Item - Funcionarios Collapse Menu -->
            <li class="nav-item">
                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFunc"
@@ -87,34 +118,18 @@
             </div>
             </li>
 
-           <!-- Nav Item - Pedidos Collapse Menu -->
+            <!-- Nav Item - Taxas Collapse Menu -->
            <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePedidos"
-                aria-expanded="true" aria-controls="collapsePedidos">
-                <i class="fas fa-fw fa-envelope"></i>
-                <span>Pedidos</span>
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTaxas"
+                aria-expanded="true" aria-controls="collapseTaxas">
+                <i class="fas fa-fw fa-dollar-sign"></i>
+                <span>Taxas</span>
             </a>
-            <div id="collapsePedidos" class="collapse" aria-labelledby="headingPedidos"
+            <div id="collapseTaxas" class="collapse" aria-labelledby="headingTaxas"
                 data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="pedidos.html">Consultar</a>
-                </div>
-            </div>
-            </li>
-
-           <!-- Nav Item - Operações Collapse Menu -->
-           <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOperacoes"
-                aria-expanded="true" aria-controls="collapseOperacoes">
-                <i class="fas fa-fw fa-wrench"></i>
-                <span>Operações</span>
-            </a>
-            <div id="collapseOperacoes" class="collapse" aria-labelledby="headingOperacoes"
-                data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="operacoes.html">Consultar</a>
-                    <a class="collapse-item" href="registarOp.html">Registar</a>
-                    <a class="collapse-item" href="material.html">Material</a>
+                    <a class="collapse-item" href="tipologia.html">Tipo de Serviço</a>
+                    <a class="collapse-item" href="risco.html">Nível de Risco</a>
                 </div>
             </div>
             </li>
@@ -529,6 +544,18 @@
                                 <option value="Zimbabwe">Zimbabwe</option>
                              </select>
 
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control form-control-user" id="tipoServico">
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control form-control-user" id="nivelRisco">
+
+                            </select>
                         </div>
                         
                         <div class="form-group row">
