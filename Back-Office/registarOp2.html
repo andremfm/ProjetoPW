@@ -22,7 +22,7 @@
 
 </head>
 
-<body id="page-top" onload="registarOp2()">
+<body id="page-top" onload="loadDataOp2()">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -275,14 +275,14 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container mt-5">
+                <div class="container">
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Registar Operação</h1>
                     <h6 class="h5 mb-4 text-gray-800">Selecionar Funcionários</h6>
 
-                    <div class="table-responsive">
-                        <div class="col">
+                    <div class="row">
+                        <div class="col-md-8">
                             <table class="table table-striped table-hover">
                                 <thead>
                                 <tr>
@@ -290,26 +290,26 @@
                                     <th scope="col">Função</th>
                                     <th scope="col">Nome</th>
                                     <th scope="col">Valor do Serviço</th>
-                                    <th scope="col"></th>
                                 </tr>
                                 </thead>
                                 <tbody id="selecionarFunc"></tbody>
                           </table>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <table class="table table-striped table-hover">
                                 <thead>
                                 <tr>
                                     <th scope="col">Descrição</th>
-                                    <th scope="col">Nome</th>
-                                    <th scope="col"></th>
+                                    <th scope="col">Valor</th>
                                 </tr>
                                 </thead>
                                 <tbody id="subtotal"></tbody>
                           </table>
                         </div>
                     </div>
-                    
+                    <a class="btn btn-primary btn-user btn-block" href="registarOp3.html" id="submit">
+                        Seguinte
+                    </a>
 
                 </div>
                 <!-- /.container-fluid -->
