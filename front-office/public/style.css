@@ -1,8 +1,12 @@
-
+body {
+	background-color:#1B2631;
+ 
+}
 
 .btn-orcamento {
 	align-items: center;
-	background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+	background: rgb(178,95,102);
+	background: linear-gradient(90deg, rgba(178,95,102,1) 0%, rgba(54,62,109,1) 100%);
 	border: 0;
 	border-radius: 8px;
 	box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
