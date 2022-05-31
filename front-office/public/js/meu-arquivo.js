@@ -36,3 +36,25 @@ function BarraPesquisa() {
       }
   }
 }
+
+function guardarFunc() {
+  let pedido = new Object();
+  let a = [];
+  
+
+    pedido.Nome = document.getElementById("name").value;
+    pedido.Email = document.getElementById("email").value;
+    pedido.Empresa = document.getElementById("empresa").value;
+    pedido.Telemóvel = document.getElementById("phone").value;
+    
+
+    a = JSON.parse(localStorage.getItem("pedidos")) || [];
+    a.push(pedido);
+
+    localStorage.setItem("pedidos", JSON.stringify(a));
+
+    alert("Adicionado com sucesso!")
+    document.getElementById("orçamento").reset();
+  
+  
+} 
