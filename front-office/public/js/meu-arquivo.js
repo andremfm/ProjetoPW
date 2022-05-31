@@ -46,6 +46,7 @@ function guardarFunc() {
     pedido.Email = document.getElementById("email").value;
     pedido.Empresa = document.getElementById("empresa").value;
     pedido.Telemóvel = document.getElementById("phone").value;
+    pedido.TipoDeCobertura = document.getElementById("cobertura").value;
     
 
     a = JSON.parse(localStorage.getItem("pedidos")) || [];
