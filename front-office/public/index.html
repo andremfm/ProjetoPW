@@ -130,16 +130,12 @@
                             <div class="invalid-feedback" data-sb-feedback="phone:required">Por favor introduza o seu número de telemóvel.</div>
                         </div>
                         <!-- tipo de cobertura input-->
-                        <div class="form-floating mb-3">                        
-                            <label for="message">Tipo de cobertura</label> <p></p>                       
-                            <input type="checkbox" id="cobertura1" name="cobertura1" value="Filmagem">
-                            <label for="cobertura1">Filmagem</label><br>
-                            <input type="checkbox" id="cobertura2" name="cobertura2" value="Som">
-                            <label for="cobertura2">Som</label><br>
-                            <input type="checkbox" id="cobertura3" name="cobertura3" value="Jornalistas e Reporters">
-                            <label for="cobertura3">Jornalistas e Repórteres</label><br>                        
-                            <div class="invalid-feedback" data-sb-feedback="message:required">Por favor Selecione uma cobertura.</div>
-                        </div>                   
+                        <div class="form-floating mb-3">
+                          <label for="message">Tipo de cobertura</label>
+                          <input class="form-control" id="cobertura" type="text" placeholder="Descreva o tipo de cobertura que quer." data-sb-validations="required" />
+                          <div class="invalid-feedback" data-sb-feedback="cobertura:required">Por favor preencha o campo.</div>
+                        </div>
+                                          
                         <!-- botão de submeter-->
                         <a class="btn-orcamento" onclick="guardarFunc(); window.location.reload()">
                             Pedir já
