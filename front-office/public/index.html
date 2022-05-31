@@ -110,7 +110,7 @@
         <div class="container marketing">
             <hr class="featurette-divider"> 
             <div class="row feauturette ">
-            <h2 class=" text-muted">Pedido</div>   
+            <h2 class=" text-muted text-center">Pedido</div>   
             <hr class="featurette-divider">
              
             <!-- pedido de orçamento Section Form-->
@@ -121,42 +121,33 @@
                         <div class="form-floating mb-3">                       
                             <label for="name">Nome</label>
                             <input class="form-control" id="name" type="text" placeholder="O seu nome..." data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Por favor introduza o seu nome.</div>
                         </div>
                         <!-- Email  input-->
                         <div class="form-floating mb-3">
                             <label for="email">Email</label>
                             <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                             <div class="invalid-feedback" data-sb-feedback="email:required">Por favor introduza um email.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Este email não é válido.</div>
                         </div>
                         <!-- empresa input-->
                         <div class="form-floating mb-3">
                             <label for="name">Empresa</label>
                             <input class="form-control" id="empresa" type="text" placeholder="O nome da sua empresa..." data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="empresa:required">Por favor introduza o nome da sua empresa.</div>
                         </div>
                         <!-- telemóvel input-->
                         <div class="form-floating mb-3">
                             <label for="phone">Telemóvel</label>
                             <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">Por favor introduza o seu número de telemóvel.</div>
                         </div>
                         <!-- tipo de cobertura input-->
-                        <div class="form-floating mb-3">                        
-                            <label for="message">Tipo de cobertura</label> <p></p>                       
-                            <input type="checkbox" id="cobertura1" name="cobertura1" value="Filmagem">
-                            <label for="cobertura1">Filmagem</label><br>
-                            <input type="checkbox" id="cobertura2" name="cobertura2" value="Som">
-                            <label for="cobertura2">Som</label><br>
-                            <input type="checkbox" id="cobertura3" name="cobertura3" value="Jornalistas e Reporters">
-                            <label for="cobertura3">Jornalistas e Repórteres</label><br>                        
-                            <div class="invalid-feedback" data-sb-feedback="message:required">Por favor Selecione uma cobertura.</div>
-                        </div>                   
+                        <div class="form-floating mb-3">
+                          <label for="message">Tipo de cobertura</label>
+                          <input class="form-control" id="cobertura" type="text" placeholder="Ex: Entrevista..." data-sb-validations="required" />
+                         <br>
                         <!-- botão de submeter-->
                         <a class="btn-orcamento" onclick="guardarFunc(); window.location.reload()">
                             Pedir já
                         </a>
+                        <br>
                     </form>
                 </div>
             </div>
