@@ -22,7 +22,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="loadDataPedidos()">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -219,7 +219,7 @@
                         </li>
 
                         <!-- Nav Item - Messages -->
-                        <li class="nav-item dropdown no-arrow mx-1">
+                        <li class="nav-item dropdown no-arrow mx-1" onclick="dropdownPedidos()">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
@@ -230,9 +230,10 @@
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
-                                    Centro de Mensagens
+                                    Centro de Pedidos
                                 </h6>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Mais Mensagens...</a>
+                                <p id="centropedidos"></p>
+                                <a class="dropdown-item text-center small text-gray-500" href="pedidos.html">Mais Pedidos...</a>
                             </div>
                         </li>
 
@@ -278,7 +279,20 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Pedidos</h1>
+                    <h3 class="text-center">Pedidos</h3>
+                    <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Empresa</th>
+                            <th scope="col">Telefone</th>
+                            <th scope="col">Email</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody id="tbbodypedidos"></tbody>
+                      </table>
 
                 </div>
                 <!-- /.container-fluid -->

@@ -36,3 +36,37 @@ function BarraPesquisa() {
       }
   }
 }
+
+function guardarFunc() {
+  let pedido = new Object();
+  let a = [];
+  
+
+    pedido.Nome = document.getElementById("name").value;
+    pedido.Email = document.getElementById("email").value;
+    pedido.Empresa = document.getElementById("empresa").value;
+    pedido.Telemóvel = document.getElementById("phone").value;
+    pedido.TipoDeCobertura = document.getElementById("cobertura").value;
+    
+
+    a = JSON.parse(localStorage.getItem("pedidos")) || [];
+    a.push(pedido);
+
+    localStorage.setItem("pedidos", JSON.stringify(a));
+
+    alert("Adicionado com sucesso!")
+    document.getElementById("orçamento").reset();
+  
+  
+} 
+
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
