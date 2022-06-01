@@ -56,7 +56,8 @@ function guardarFunc() {
     localStorage.setItem("pedidos", JSON.stringify(a));
 
     alert("Adicionado com sucesso!")
-    document.getElementById("orçamento").reset();
+    document.getElementById("pedidoOrçamento").reset();
+    
   
   
 } 
